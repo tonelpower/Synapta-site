@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Empowering businesses with intelligent automations that transform operations." />
+    <title>Synapta AI Agency Website</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Chatbot Widget -->
+    <div style="width: 0; height: 0;" id="VG_OVERLAY_CONTAINER"></div>
+    <script defer>
+        (function() {
+            window.VG_CONFIG = {
+                ID: "r34afwg1n6eok1g2",
+                region: 'na',
+                render: 'bottom-right',
+                autostart: true,
+                proactiveMessage: "Salut! Cu ce te pot ajuta?",
+                stylesheets: [
+                    "https://vg-bunny-cdn.b-cdn.net/vg_live_build/styles.css",
+                ],
+            }
+            var VG_SCRIPT = document.createElement("script");
+            VG_SCRIPT.src = "https://vg-bunny-cdn.b-cdn.net/vg_live_build/vg_bundle.js";
+            VG_SCRIPT.defer = true;
+            document.body.appendChild(VG_SCRIPT);
+        })()
+    </script>
+  </body>
+</html>
