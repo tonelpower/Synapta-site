@@ -104,11 +104,11 @@ export default function CTA() {
 
       <div className="relative max-w-3xl mx-auto text-center">
         <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white leading-tight">
-          Începe să economisești timp și bani azi
+          Dă viață ideilor tale. Peste imaginație
         </h2>
 
         <p className="text-lg md:text-xl text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed font-normal">
-          Lasă AI-ul să facă munca repetitivă pentru tine și concentrează-te pe creșterea afacerii.
+          Atenția costă. Fără ea, niciun brand nu există.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">

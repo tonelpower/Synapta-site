@@ -1,24 +1,24 @@
 import { useEffect, useRef, useState } from 'react';
-import { Search, Cog, TrendingUp } from 'lucide-react';
+import { Sparkles, Eye, TrendingUp } from 'lucide-react';
 
 const steps = [
   {
-    icon: Search,
+    icon: Sparkles,
     number: '01',
-    title: 'Descoperim',
-    description: 'Analizăm cum funcționează afacerea ta și ce poate fi automatizat.',
+    title: 'Creează',
+    description: 'Totul începe cu o idee. O transformăm în imagine, video sau website — combinând generarea și editarea inteligentă cu ajutorul AI-ului.',
   },
   {
-    icon: Cog,
+    icon: Eye,
     number: '02',
-    title: 'Automatizăm',
-    description: 'Conectăm sistemele și creăm fluxuri inteligente care economisesc timp.',
+    title: 'Captează',
+    description: 'Atragem privirea. Conținutul tău iese din zgomot și prinde atenția oamenilor.',
   },
   {
     icon: TrendingUp,
     number: '03',
-    title: 'Scalează',
-    description: 'Mai mulți clienți, mai multă satisfacție, cu mai puțină muncă manuală.',
+    title: 'Monetizează',
+    description: 'Atenția valorează. Transformăm interesul în acțiune și acțiunea în rezultate.',
   },
 ];
 
@@ -68,9 +68,8 @@ export default function HowItWorks() {
 
       <div className="relative max-w-6xl mx-auto">
         <div className="text-center mb-20">
-          <p className="text-sm text-gray-500 uppercase tracking-wider mb-4 font-medium">Cum Funcționează</p>
           <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">
-            De la vizitator la client complet automatizat
+            Atenția este noua monedã
           </h2>
         </div>
 

@@ -1,21 +1,21 @@
 import { useEffect, useRef, useState } from 'react';
-import { MessageCircle, Database, Calendar } from 'lucide-react';
+import { Palette, Bot, Globe } from 'lucide-react';
 
 const benefits = [
   {
-    icon: MessageCircle,
-    title: 'Suport clienți care nu doarme niciodată',
-    description: 'Răspunsuri instant, 24/7, pe chat, email sau telefon. Economisești ore de lucru și reduci frustrările clienților.',
+    icon: Palette,
+    title: 'Estetică adaptată',
+    description: 'Editare foto și video adaptată stilului tău — de la futurist la minimalist. Impact vizual autentic, creat cu inteligență și atenție la detaliu.',
   },
   {
-    icon: Database,
-    title: 'CRM care se actualizează singur',
-    description: 'Fiecare lead urmărit și etichetat automat. Economisești timp și nu mai pierzi oportunități de vânzare.',
+    icon: Bot,
+    title: 'Vizualuri create 100% prin AI',
+    description: 'Imagini și clipuri generate integral prin AI. Conținut unic, memorabil, care atrage atenția instant.',
   },
   {
-    icon: Calendar,
-    title: 'Programări setate automat',
-    description: 'Integrează-te cu calendarul tău și transformă interesul în întâlniri reale. Mai mulți clienți, mai multă satisfacție cu mai puțină muncă manuală.',
+    icon: Globe,
+    title: 'Website creat cu AI, de la zero',
+    description: 'Site modern și rapid, construit complet prin AI. Design inteligent, texte optimizate și experiență fluidă.',
   },
 ];
 
@@ -59,9 +59,8 @@ export default function ValueProposition() {
       <div className="relative max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight mb-4">
-            AI-ul nu îți va lua locul. Dar cine îl folosește, da.
+            Conținut și experiențe vizuale născute din AI.
           </h2>
-          <p className="text-xl text-gray-400 font-normal">Economisește timp și bani cu soluții inteligente</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">

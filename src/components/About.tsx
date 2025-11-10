@@ -11,16 +11,9 @@ export default function About() {
           <span className="font-mono text-xs text-gray-500 tracking-wider">DESPRE NOI</span>
         </div>
 
-        <p className="text-2xl md:text-4xl text-white leading-relaxed font-medium mb-6" style={{ letterSpacing: '-0.02em', lineHeight: '1.4' }}>
-          Valorificăm puterea inteligenței artificiale pentru a crea automatizări fluide care sporesc
-          <span className="text-cyan-400"> eficiența</span>,
-          <span className="text-cyan-400"> luarea deciziilor</span> și
-          <span className="text-cyan-400"> creșterea</span>.
-        </p>
-
-        <p className="text-lg md:text-xl text-gray-500 leading-relaxed font-normal max-w-3xl mx-auto">
-          Conectăm creativitatea umană cu inteligența artificială pentru a transforma modul în care companiile funcționează în era modernă.
-        </p>
+        <h2 className="text-2xl md:text-4xl text-white leading-relaxed font-medium mb-6" style={{ letterSpacing: '-0.02em', lineHeight: '1.4' }}>
+          Conținut și experiențe vizuale născute din AI.
+        </h2>
       </div>
     </section>
   );

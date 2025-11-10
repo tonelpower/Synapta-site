@@ -40,17 +40,17 @@ export default function Hero() {
       <div className="relative z-20 text-center px-6 max-w-6xl mx-auto pt-20">
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-12 text-white leading-[1.1] tracking-tight flex flex-col items-center">
           <TypewriterText
-            text="Automatizează."
+            text="Idei."
             speed={60}
             delay={500}
           />
           <TypewriterText
-            text="Scalează."
+            text="Algoritmi."
             speed={60}
             delay={1300}
           />
           <TypewriterText
-            text="Evoluează."
+            text="Magie."
             speed={60}
             delay={2000}
           />

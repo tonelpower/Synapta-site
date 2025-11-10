@@ -1,23 +1,23 @@
 import { useEffect, useRef, useState } from 'react';
-import { MessageSquare, Database, Calendar } from 'lucide-react';
+import { Palette, Bot, Globe } from 'lucide-react';
 
 const solutions = [
   {
-    icon: MessageSquare,
-    title: 'Suport clienți AI',
-    description: 'Chat, telefon și email automatizat pentru clienți mulțumiți. Economisești timp și efort.',
+    icon: Palette,
+    title: 'Estetică adaptată',
+    description: 'Vrei ceva futurist, cu efecte vizuale puternice, sau preferi un stil minimalist, curat și elegant? Realizăm editare foto și video care se aliniază perfect viziunii tale și oferă un impact vizual autentic, fără compromisuri.',
     color: 'cyan',
   },
   {
-    icon: Database,
-    title: 'CRM & automatizare date',
-    description: 'Fiecare lead urmărit, etichetat și gestionat automat cu ajutorul AI-ului. De la email marketing și newslettere, până la emailuri de follow-up și review, AI personalizează mesajele și face toată munca în locul tău.',
+    icon: Bot,
+    title: 'Vizualuri create 100% prin AI',
+    description: 'Imagini și videoclipuri generate de la zero cu inteligență artificială. Conținut original, unic și memorabil, gata să atragă atenția, să creeze reacții și să pună brandul tău în centrul conversației.',
     color: 'violet',
   },
   {
-    icon: Calendar,
-    title: 'Programări automate',
-    description: 'Lasă AI-ul să se ocupe de programări și confirmări, în timp ce tu te concentrezi pe dezvoltarea afacerii.',
+    icon: Globe,
+    title: 'Website creat cu AI, de la 0',
+    description: 'Site modern, rapid și construit integral prin AI – design, text și structură optimizate pentru conversii. O experiență digitală inteligentă care îți prezintă brandul profesionist și transformă vizitatorii în potențiali clienți.',
     color: 'cyan',
   },
 ];
@@ -70,7 +70,7 @@ export default function Solutions() {
         <div className="text-center mb-20">
           <p className="text-sm text-gray-500 uppercase tracking-wider mb-4 font-medium">Servicii</p>
           <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">
-            Servicii de Automatizare
+            Servicii Content Creation
           </h2>
         </div>
 
@@ -106,7 +106,7 @@ export default function Solutions() {
 
         <div className="text-center">
           <a href="https://calendly.com/dultefantonioo/ai-booking-demo" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 border-4 border-white text-black font-semibold bg-white shadow-[6px_6px_0px_0px_rgba(255,255,255,0.4)] transition-all duration-200 hover:shadow-[8px_8px_0px_0px_rgba(255,255,255,0.4)] hover:translate-x-[-2px] hover:translate-y-[-2px] text-base">
-            Începe automatizarea
+            Începe diferențierea
           </a>
         </div>
       </div>
