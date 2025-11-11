@@ -25,12 +25,6 @@ export default function Navigation() {
 
         <div className="flex items-center gap-8">
           <button
-            onClick={() => scrollToSection('about')}
-            className="text-white hover:text-gray-400 transition-colors text-sm font-medium"
-          >
-            Despre
-          </button>
-          <button
             onClick={() => scrollToSection('solutions')}
             className="text-white hover:text-gray-400 transition-colors text-sm font-medium"
           >

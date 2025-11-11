@@ -1,24 +1,24 @@
 import { useEffect, useRef, useState } from 'react';
-import { Sparkles, Eye, TrendingUp } from 'lucide-react';
+import { Sparkles, MessageCircle, TrendingUp } from 'lucide-react';
 
 const steps = [
   {
     icon: Sparkles,
     number: '01',
-    title: 'Creează',
-    description: 'Totul începe cu o idee. O transformăm în imagine, video sau website — combinând generarea și editarea inteligentă cu ajutorul AI-ului.',
+    title: 'CREEAZĂ',
+    description: 'Combinăm AI-ul cu creativitatea umană pentru a crea și edita conținut unic, adaptat brandului tău.\nImagini și clipuri care atrag atenția și te diferențiază instant în online.',
   },
   {
-    icon: Eye,
+    icon: MessageCircle,
     number: '02',
-    title: 'Captează',
-    description: 'Atragem privirea. Conținutul tău iese din zgomot și prinde atenția oamenilor.',
+    title: 'CONECTEAZĂ',
+    description: 'Chatboți inteligenți care răspund instant clienților, oferă suport și colectează automat datele importante.\nFără mesaje pierdute, fără lead-uri ratate — disponibil 24/7.',
   },
   {
     icon: TrendingUp,
     number: '03',
-    title: 'Monetizează',
-    description: 'Atenția valorează. Transformăm interesul în acțiune și acțiunea în rezultate.',
+    title: 'MONETIZEAZĂ',
+    description: 'Transformăm atenția în acțiune și acțiunea în rezultat.\nAutomatizăm procesele, economisim timp și creștem conversiile — totul prin soluții AI integrate.',
   },
 ];
 
@@ -69,7 +69,7 @@ export default function HowItWorks() {
       <div className="relative max-w-6xl mx-auto">
         <div className="text-center mb-20">
           <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">
-            Atenția este noua monedã
+            CREEAZĂ. CONECTEAZĂ. MONETIZEAZĂ.
           </h2>
         </div>
 

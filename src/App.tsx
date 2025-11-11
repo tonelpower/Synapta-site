@@ -1,5 +1,4 @@
 import Hero from './components/Hero';
-import ValueProposition from './components/ValueProposition';
 import HowItWorks from './components/HowItWorks';
 import Solutions from './components/Solutions';
 import CTA from './components/CTA';
@@ -11,7 +10,6 @@ function App() {
     <div className="min-h-screen bg-black text-white overflow-x-hidden relative">
       <Navigation />
       <Hero />
-      <ValueProposition />
       <HowItWorks />
       <Solutions />
       <CTA />
