@@ -62,7 +62,7 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
           <a href="https://calendly.com/dultefantonioo/ai-booking-demo" target="_blank" rel="noopener noreferrer" className="group relative px-8 py-4 bg-white text-black font-semibold tracking-wide border-4 border-white shadow-[6px_6px_0px_0px_rgba(255,255,255,0.3)] transition-all duration-200 hover:shadow-[8px_8px_0px_0px_rgba(255,255,255,0.3)] hover:translate-x-[-2px] hover:translate-y-[-2px] text-base">
             <span className="flex items-center gap-2">
-              Obține un audit gratuit
+              Hai sǎ creǎm
               <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
               </svg>

@@ -24,7 +24,9 @@ const steps = [
 
 export default function HowItWorks() {
   const [isVisible, setIsVisible] = useState(false);
+  const [activeStep, setActiveStep] = useState(0);
   const sectionRef = useRef<HTMLElement>(null);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -43,6 +45,21 @@ export default function HowItWorks() {
     }
 
     return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    const container = scrollContainerRef.current;
+    if (!container) return;
+
+    const handleScroll = () => {
+      const scrollLeft = container.scrollLeft;
+      const cardWidth = container.scrollWidth / 3;
+      const newIndex = Math.round(scrollLeft / cardWidth);
+      setActiveStep(Math.min(newIndex, 2));
+    };
+
+    container.addEventListener('scroll', handleScroll);
+    return () => container.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
@@ -73,13 +90,13 @@ export default function HowItWorks() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div ref={scrollContainerRef} className="flex flex-row md:grid md:grid-cols-3 gap-8 mb-16 overflow-x-auto md:overflow-x-visible snap-x snap-mandatory scrollbar-hide">
           {steps.map((step, index) => {
             const Icon = step.icon;
             const delayClass = index === 0 ? 'animation-delay-300' : index === 1 ? 'animation-delay-500' : 'animation-delay-700';
 
             return (
-              <div key={index} className="relative">
+              <div key={index} className="relative min-w-full md:min-w-0 snap-center">
                 <div className={`flex flex-col items-center text-center ${isVisible ? `animate-fade-in-up ${delayClass}` : 'opacity-0'}`}>
                   <div className="mb-6 relative">
                     <div className="w-24 h-24 border-4 border-white bg-zinc-900 flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(255,255,255,0.3)]">
@@ -107,6 +124,17 @@ export default function HowItWorks() {
               </div>
             );
           })}
+        </div>
+
+        <div className="flex md:hidden justify-center gap-2 mb-12">
+          {steps.map((_, index) => (
+            <div
+              key={index}
+              className={`h-2 rounded-full transition-all duration-300 ${
+                index === activeStep ? 'w-8 bg-white' : 'w-2 bg-gray-600'
+              }`}
+            />
+          ))}
         </div>
 
         <div className="text-center">

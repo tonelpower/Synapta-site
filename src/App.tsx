@@ -1,6 +1,8 @@
 import Hero from './components/Hero';
 import HowItWorks from './components/HowItWorks';
 import Solutions from './components/Solutions';
+import Video from './components/Video';
+import Disclaimer from './components/Disclaimer';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
 import Navigation from './components/Navigation';
@@ -12,6 +14,8 @@ function App() {
       <Hero />
       <HowItWorks />
       <Solutions />
+      <Video />
+      <Disclaimer />
       <CTA />
       <Footer />
     </div>

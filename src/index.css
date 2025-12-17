@@ -255,3 +255,50 @@ body::after {
 ::-webkit-scrollbar-thumb:hover {
   background: #cccccc;
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ===== GLOBAL SPACING FIX ===== */
+
+/* Kill huge section spacing */
+section {
+  padding-top: 48px !important;
+  padding-bottom: 48px !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Remove extra spacing from div wrappers */
+section > div {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Headings spacing fix */
+h1, h2, h3, h4 {
+  margin-top: 0 !important;
+  margin-bottom: 24px !important;
+}
+
+/* Paragraph spacing fix */
+p {
+  margin-bottom: 16px !important;
+}
+
+/* Buttons spacing fix */
+button, a {
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
+}
+
+/* Remove invisible spacers if any */
+.spacer, .empty, .gap {
+  display: none !important;
+}

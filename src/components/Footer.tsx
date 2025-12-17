@@ -1,4 +1,4 @@
-import { Instagram, Twitter } from 'lucide-react';
+import { Instagram, Facebook } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-center space-y-6">
           <div className="flex items-center gap-6">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/synapta_ro"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-gray-300 transition-colors duration-200 border-2 border-white p-2 hover:border-gray-300 bg-zinc-900 hover:shadow-[3px_3px_0px_0px_rgba(255,255,255,0.3)]"
@@ -15,12 +15,12 @@ export default function Footer() {
               <Instagram className="w-5 h-5" strokeWidth={2.5} />
             </a>
             <a
-              href="https://twitter.com"
+              href="https://www.facebook.com/share/14RNz6k5hqW/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-gray-300 transition-colors duration-200 border-2 border-white p-2 hover:border-gray-300 bg-zinc-900 hover:shadow-[3px_3px_0px_0px_rgba(255,255,255,0.3)]"
             >
-              <Twitter className="w-5 h-5" strokeWidth={2.5} />
+              <Facebook className="w-5 h-5" strokeWidth={2.5} />
             </a>
           </div>
 
